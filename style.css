@@ -1,0 +1,44 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cursor {
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    mix-blend-mode: difference;
+    filter: blur(10px);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    /* absolute is imp for this effect */
+    position: absolute; 
+    /* transition: all linear 0.2s; */
+    pointer-events: none;
+    transition: all linear 0.2s, box-shadow 0.2s ease;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Glow effect */
+
+}
+
+h1 {
+    font-size: 10vw;
+    font-weight: 900;
+    text-transform: uppercase;
+}
